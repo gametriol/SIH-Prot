@@ -1,0 +1,76 @@
+<!-- Rock-Paper-Scissors Game -->
+<div class="container mt-4">
+    <h2 class="text-center mb-3">Rock-Paper-Scissors Game</h2>
+    <div class="row justify-content-center">
+      <!-- Display chosen moves -->
+      <div class="col-12 col-md-8 text-center">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <strong class="text-center">You</strong>
+            <div id="player-choice" class="choice-box">
+              <img src="" alt="Player Choice" id="player-img" class="img-fluid" style="max-width: 150px; height: auto;">
+            </div>
+          </div>
+          <div class="col-12 col-md-2 my-auto">
+            <h3>VS</h3>
+          </div>
+          <div class="col-12 col-md-5">
+            <strong class="text-center">Computer</strong>
+            <div id="computer-choice" class="choice-box">
+              <img src="" alt="Computer Choice" id="computer-img" class="img-fluid" style="max-width: 150px; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Game buttons -->
+      <div class="col-12 text-center mt-4">
+        <div class="row justify-content-center">
+          <div class="col-4 col-sm-3 col-md-2">
+            <button type="button" class="btn choice-btn" onclick="play('rock')">
+              <img src="/images/rps/rock.jpg" alt="Rock" class="img-fluid choice-img">
+            </button>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2">
+            <button type="button" class="btn choice-btn" onclick="play('paper')">
+              <img src="/images/rps/paper.jpg" alt="Paper" class="img-fluid choice-img">
+            </button>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2">
+            <button type="button" class="btn choice-btn" onclick="play('scissor')">
+              <img src="/images/rps/scissor.jpg" alt="Scissors" class="img-fluid choice-img">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer text-center mt-4 col-12">
+        <span id="points">Points: 0</span>
+      </div>
+
+      <!-- Result -->
+    <div id="result" class="text-center mt-4 col-12">
+        <!-- Result will be displayed here -->
+      </div>
+    </div>
+  </div>
+<!-- question -->
+  <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="questionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="questionModalLabel">Question</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="questionText">Question?</p>
+          <button class="btn btn-success" onclick="answerQuestion(true)">Correct Answer</button>
+          <button class="btn btn-danger" onclick="answerQuestion(false)">Wrong Answer</button>
+        </div>
+        <div class="modal-footer">
+          <span id="points">Points: 0</span>
+        </div>
+      </div>
+    </div>
+  </div>

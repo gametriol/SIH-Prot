@@ -1,0 +1,54 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  } */
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .site-footer {
+    background-color: #f1f3f5;
+    padding: 10px 0;
+  }
+
+  
+  /* RPS STYLE */
+
+  .choice-box {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+  }
+  .img-show{
+    max-width: 50%;
+  }
+  .choice-img {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .choice-btn {
+    padding: 0;
+  border: none;
+  background: transparent;
+  }
+  
